@@ -35,21 +35,21 @@ export default function Home() {
             <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:relative md:top-[-9.5vh] md:left-[-10vw]">
               {isLoggedIn ? (
                 <div className="rounded-md shadow">
-                  <a
+                  <Link
                     href="/admin"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md  bg-blue-600 hover:bg-blue-700 md:text-lg "
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg"
                   >
                     Go to Dashboard
-                  </a>
+                  </Link>
                 </div>
               ) : (
                 <div className="rounded-md shadow">
-                  <a
+                  <Link
                     href="/login"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10"
                   >
                     Get Started
-                  </a>
+                  </Link>
                 </div>
               )}
             </div>
@@ -70,7 +70,7 @@ export default function Home() {
           </div>
 
           <div className="md:relative md:top-[8vh] md:left-[2vw]">
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 ">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               <div className="bg-white rounded-lg shadow-md p-6">
                 <div className="flex items-center">
                   <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
@@ -124,17 +124,17 @@ export default function Home() {
             <h2 className="text-3xl font-extrabold text-gray-900">
               Try the Demo
             </h2>
-            <p className="mt-4 text-lg text-gray-600 ">
+            <p className="mt-4 text-lg text-gray-600">
               Use these credentials to test the authentication system
             </p>
-            <div className="mt-8  rounded-lg p-6 max-w-md mx-auto md:relative md:left-[43vw] md:top-[3vh]">
+            <div className="mt-8 bg-gray-50 rounded-lg p-6 max-w-md mx-auto md:relative md:left-[43vw] md:top-[3vh]">
               <div className="text-left">
                 <p className="text-sm font-medium text-gray-700">Demo Credentials:</p>
                 <p className="mt-2 text-sm text-gray-600">
-                  <span className="font-mono  px-2 py-1 rounded">Username: admin</span>
+                  <span className="font-mono bg-gray-200 px-2 py-1 rounded">Username: admin</span>
                 </p>
                 <p className="mt-1 text-sm text-gray-600">
-                  <span className="font-mono px-2 py-1 rounded">Password: admin123</span>
+                  <span className="font-mono bg-gray-200 px-2 py-1 rounded">Password: admin123</span>
                 </p>
               </div>
             </div>
